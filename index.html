@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<title>Michał Dąbrowski</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+		<link rel="stylesheet" href="css/style.css"/>
+		
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700,900|Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	
+	</div>
+	<div class="container">
+	<nav class = "navbar">
+			<div class="hamburger-menu">
+				<div class="line line-1"></div>
+				<div class="line line-2"></div>
+				<div class="line line-3"></div>
+
+			</div>
+			
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="#home" class="nav-link">Strona główna</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link">O mnie</a>
+				</li>
+				<li class="nav-item">
+					<a href="#work" class="nav-link">Moje projekty</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" class="nav-link">Kontakt</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="section" id="home">
+			<h1 class="home-title">Programista i full-stack developer</h1>
+			<h2>{md}</h2>
+			<a href="#about" class="btn1">Zobacz więcej</a>
+		</div>
+		<div class="section" id="about">
+		<h2 class="about-title">Cześć, jestem Michał.</h2>
+		<div class="about-me-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus vulputate est, ac convallis erat sagittis et. Sed a nulla ullamcorper, sodales nunc a, rutrum neque. Nam et sollicitudin felis.</p></div>
+		<div class="services">
+				<div class="service">
+				<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>
+					<h3 class="service-title">Java</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus vulputate est, ac convallis erat sagittis et. Sed a nulla ullamcorper, sodales nunc a, rutrum neque. Nam et sollicitudin felis.</p>
+					</div>
+				<div class="service">
+				<img src="https://img.icons8.com/color/48/000000/python.png"/>
+					<h3 class="service-title">Python</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus vulputate est, ac convallis erat sagittis et. Sed a nulla ullamcorper, sodales nunc a, rutrum neque. Nam et sollicitudin felis.  </p>
+				</div>
+				<div class="service">
+				<img src="https://img.icons8.com/color/48/000000/html-5.png"/>
+					<h3 class="service-title">Full-stack</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus vulputate est, ac convallis erat sagittis et. Sed a nulla ullamcorper, sodales nunc a, rutrum neque. Nam et sollicitudin felis. </p>
+				</div>
+			</div>
+			<a href="#work" class="btn">My Work</a>
+		</div>
+		<div class="section" id="work">
+						<h1 class= "portfolio-title">Moje ostatnie projekty</h1>
+
+			<div class="portfolio">
+				<div class="job"><a href="#"><p class="tekst">Java project<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eget nisi.</p> </a></div>
+				<div class="job"><a href="#"><p class="tekst">Python project<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eget nisi. </p></a></div>
+				<div class="job"><a href="#"><p class="tekst">PHP project<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eget nisi. </p> </a></div>
+			</div>
+		</div>
+		<div class="section" id="contact">
+		<h1 class= "portfolio-title">Kontakt</h1>
+		<form name="gform" enctype="text/plain" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSfOJZypypWNcDVtJ9y22cTYruKT8ow2VrcDRQN_x8Ejhr0X4Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+  <p class="message-box-text">
+    <label for="entry.1054571636">Imię: <input type="text" name="entry.1054571636" id="entry.1054571636"/></label>   
+  </p>
+  <p class="message-box-text">
+    <label for="entry.741320384">Adres e-mail: <input type="email" name="entry.741320384" id="entry.741320384"/></label>
+  </p>
+ 
+  <p class="message-box-text">
+    <label for="entry.308093706">Wiadomość: <textarea name="entry.308093706" id="entry.308093706"></textarea></label>
+  </p>
+  <p>
+    <button type="submit" class="btn">Wyślij</button>
+  </p>
+</form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+</body>
+</html>
